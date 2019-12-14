@@ -12,7 +12,8 @@ class Application
       else 
         ["<strong>Good Morning!</strong>"]
       end
+    end
   end
 end
  
-run Application.new
+#run Application.new
