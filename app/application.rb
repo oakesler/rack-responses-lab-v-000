@@ -2,10 +2,10 @@ class Application
   require 'rack'
   
   def call(env)
-    return [ 200, {'Content-Type' => 'text/html'}, pretty_response ]
+    return [ 200, {'Content-Type' => 'text/html'}, time_appropriate_greeting]
     end
  
-  def pretty_response
+  def time_approrpriate_greeting
     time = Time.new
     if time.hour >= 12
       ["<strong>Good Afternoon!</strong>"] 
@@ -15,4 +15,4 @@ class Application
   end
 end
  
-#run Application.new
+run Application.new
