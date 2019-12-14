@@ -14,6 +14,5 @@ class Application
       end
     end
   end
-end
  
 #run Application.new
