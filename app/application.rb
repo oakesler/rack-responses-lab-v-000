@@ -6,10 +6,11 @@ class Application
     end
  
   def pretty_response
-    if Time.now.to_i >= 12
-      ["<strong>Good Morning!</strong>"] 
+    time = Time.new
+    if time.hour >= 12
+      ["<strong>Good Afternoon!</strong>"] 
       else 
-        ["<strong>Good Afternoon!</strong>"]
+        ["<strong>Good Morning!</strong>"]
       end
   end
 end
