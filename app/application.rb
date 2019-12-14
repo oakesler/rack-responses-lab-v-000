@@ -5,7 +5,7 @@ class Application
     return [ 200, {'Content-Type' => 'text/html'}, time_appropriate_greeting]
     end
  
-  def time_approrpriate_greeting
+  def time_appropriate_greeting
     time = Time.new
     if time.hour >= 12
       ["<strong>Good Afternoon!</strong>"] 
