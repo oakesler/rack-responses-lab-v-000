@@ -8,7 +8,7 @@ class Application
     end
  
   def time_appropriate_greeting
-    time = Time.new
+    time = Time.now
     if time.hour.to_i >= 12
       ["<strong>Good Afternoon!</strong>"]
       else 
