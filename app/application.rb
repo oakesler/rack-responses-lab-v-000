@@ -13,7 +13,7 @@ class Application
       ["<strong>Good Afternoon!</strong>"]
       else 
         #["<strong>Good Morning!</strong>"]
-        ["<strong>#{Time.hour.to_i}</strong>"]
+        ["<strong>#{time.hour}</strong>"]
       end
     end
   end
