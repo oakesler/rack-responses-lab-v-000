@@ -12,8 +12,7 @@ class Application
     if time.hour.to_i >= 12
       ["<strong>Good Afternoon!</strong>"]
       else 
-        #["<strong>Good Morning!</strong>"]
-        ["<strong>#{time.hour.to_i}</strong>"]
+        ["<strong>Good Morning!</strong>"]
       end
     end
   end
