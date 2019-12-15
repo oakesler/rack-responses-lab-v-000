@@ -1,7 +1,7 @@
+require 'pry'
+
 class Application
   require 'rack'
-  
-  require 'pry'
   
   def call(env)
     return [ 200, {'Content-Type' => 'text/html'}, time_appropriate_greeting]
