@@ -9,11 +9,11 @@ class Application
  
   def time_appropriate_greeting
     time = Time.new
-    puts time.hour.to_i
-    #if time.hour.to_i >= 12
-      #["<strong>Good Afternoon!</strong>"] 
-      #else 
+    if time.hour.to_i >= 12
+      ["<strong>Good Afternoon!</strong>"]
+      else 
         #["<strong>Good Morning!</strong>"]
+        ["<strong>#{time.hour.to_i]"]
       #end
     end
   end
